@@ -24,7 +24,7 @@ public class AlbumEntry : MonoBehaviour
     public void InjectData(AlbumEntryData data)
     {
         this.data = data;
-        Debug.Log($"Injected {data}");
+        Debug.Log($"Injected ID {data.Id}\nTitle: {data.Title}\nUrl: {data.Url}");
     }
 
     public void SetHighlight(bool doHighlight)

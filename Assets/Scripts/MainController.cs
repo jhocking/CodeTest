@@ -32,7 +32,7 @@ public class MainController : MonoBehaviour
     public void CreateAlbumEntry()
     {
         //instantiate high up so that it'll fall with the physics system
-        var albumEntry = Instantiate(prefabTemplate, new Vector3(0, 5, Random.value), Quaternion.identity);
+        var albumEntry = Instantiate(prefabTemplate, new Vector3(Random.value, 5, Random.value), Quaternion.identity);
 
         creationID++;
         if (creationID >= dataList.Count)
